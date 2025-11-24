@@ -32,6 +32,8 @@ What I’ve explored so far in this lab.
 
 
 
+
+
 ## EOS directory listing
 
 Using the XRootD client from WSL (Ubuntu):
@@ -45,7 +47,7 @@ xrdfs root://eospublic.cern.ch/ ls /eos
 
 # List CERN Open Data area
 xrdfs root://eospublic.cern.ch/ ls /eos/opendata
-
+```
 
 
 ## Environment
@@ -57,19 +59,4 @@ xrdfs root://eospublic.cern.ch/ ls /eos/opendata
 ```bash
 xrdfs --help | head
 xrdcp --help | head
-
-
-
-## EOS directory listing
-
-Using the XRootD client from WSL (Ubuntu):
-
-```bash
-# List top-level on the EOS public instance
-xrdfs root://eospublic.cern.ch/ ls /
-
-# List the EOS namespace
-xrdfs root://eospublic.cern.ch/ ls /eos
-
-# List CERN Open Data area
-xrdfs root://eospublic.cern.ch/ ls /eos/opendata
+```
