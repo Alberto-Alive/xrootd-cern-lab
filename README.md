@@ -16,18 +16,18 @@ What I’ve explored so far in this lab.
 
 ### Data access & analysis
 - [] Open a ROOT file via `root://` in ROOT or Python
-- [ ] Compare local vs remote read performance
-- [ ] Script basic dataset summary (sizes, file counts)
+- [] Compare local vs remote read performance
+- [] Script basic dataset summary (sizes, file counts)
 
 ### Monitoring / “CERN job-related” extras
-- [ ] Time multiple `xrdcp` runs and log throughput
-- [ ] Parse CLI logs into a small CSV/JSON
-- [ ] Visualise transfer stats in a simple plot/Grafana panel
-- [ ] Note common error codes and failure modes
+- [] Time multiple `xrdcp` runs and log throughput
+- [] Parse CLI logs into a small CSV/JSON
+- [] Visualise transfer stats in a simple plot/Grafana panel
+- [] Note common error codes and failure modes
 
 ### Future ideas
-- [ ] Explore XCache / caching behaviour (if accessible)
-- [ ] Try authenticated access (X.509 or tokens) in a test setup
+- [] Explore XCache / caching behaviour (if accessible)
+- [] Try authenticated access (X.509 or tokens) in a test setup
 
 
 
