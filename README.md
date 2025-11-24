@@ -9,8 +9,8 @@ What I’ve explored so far in this lab.
 
 ### XRootD & EOS basics
 - [x] Install XRootD client tools (`xrdfs`, `xrdcp`)
-- [] Connect to `root://eospublic.cern.ch//`
-- [] List directories under `/eos/opendata`
+- [x] Connect to `root://eospublic.cern.ch//`
+- [x] List directories under `/eos/opendata`
 - [] Inspect file metadata with `xrdfs stat`
 - [] Copy a ROOT file locally with `xrdcp`
 
