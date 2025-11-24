@@ -28,3 +28,19 @@ What I’ve explored so far in this lab.
 ### Future ideas
 - [ ] Explore XCache / caching behaviour (if accessible)
 - [ ] Try authenticated access (X.509 or tokens) in a test setup
+
+
+
+
+
+
+
+## Environment
+
+- OS: <your distro here> (e.g. Ubuntu 22.04)
+- XRootD client: `xrootd-client` from system packages
+- Verify install:
+
+```bash
+xrdfs --help | head
+xrdcp --help | head
