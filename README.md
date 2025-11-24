@@ -30,7 +30,16 @@ What I’ve explored so far in this lab.
 - [] Try authenticated access (X.509 or tokens) in a test setup
 
 
+## Environment
 
+- OS: <your distro here> (e.g. Ubuntu 22.04)
+- XRootD client: `xrootd-client` from system packages
+- Verify install:
+
+```bash
+xrdfs --help | head
+xrdcp --help | head
+```
 
 
 
@@ -50,13 +59,3 @@ xrdfs root://eospublic.cern.ch/ ls /eos/opendata
 ```
 
 
-## Environment
-
-- OS: <your distro here> (e.g. Ubuntu 22.04)
-- XRootD client: `xrootd-client` from system packages
-- Verify install:
-
-```bash
-xrdfs --help | head
-xrdcp --help | head
-```
