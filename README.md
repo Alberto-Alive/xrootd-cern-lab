@@ -11,8 +11,8 @@ What I’ve explored so far in this lab.
 - [x] Install XRootD client tools (`xrdfs`, `xrdcp`)
 - [x] Connect to `root://eospublic.cern.ch//`
 - [x] List directories under `/eos/opendata`
-- [] Inspect file metadata with `xrdfs stat`
-- [] Copy a ROOT file locally with `xrdcp`
+- [x] Inspect file metadata with `xrdfs stat`
+- [x] Copy a ROOT file locally with `xrdcp`
 
 ### Data access & analysis
 - [] Open a ROOT file via `root://` in ROOT or Python
@@ -35,7 +35,7 @@ What I’ve explored so far in this lab.
 - OS: <your distro here> (e.g. Ubuntu 22.04)
 - XRootD client: `xrootd-client` from system packages
 - Verify install:
-
+- Abbrev: xrdfs = XRootD Remote Distributed File System (DFS) client
 ```bash
 xrdfs --help | head
 xrdcp --help | head
