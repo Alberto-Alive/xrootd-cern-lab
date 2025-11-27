@@ -106,3 +106,16 @@ The large jump on the third run shows how much variability there can be in
 end-to-end data transfer (WAN path, caches, load, etc.). A real monitoring
 system would track these distributions over time and per site, not just
 single averages.
+
+
+### Common `xrdcp` / XRootD failure modes
+
+As part of this lab I deliberately triggered a few failures and noted the
+messages + exit codes.
+
+#### 1. Missing file (wrong EOS path)
+
+```bash
+xrdcp root://eospublic.cern.ch//eos/opendata/cms/this/does/not/exist.root ./bad.root
+echo "exit code: $?"
+```
