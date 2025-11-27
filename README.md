@@ -15,7 +15,7 @@ What I’ve explored so far in this lab.
 - [x] Copy a ROOT file locally with `xrdcp`
 
 ### Data access & analysis
-- [] Open a ROOT file via `root://` in ROOT or Python
+- [x] Open a ROOT file via `root://` in ROOT and Python
 - [] Compare local vs remote read performance
 - [] Script basic dataset summary (sizes, file counts)
 
