@@ -1,0 +1,4 @@
+# xrdcp benchmark runs
+run=1 start=1764235240 end=1764237220 duration=1980
+run=2 start=1764237220 end=1764238958 duration=1738
+run=3 start=1764238958 end=1764239013 duration=55

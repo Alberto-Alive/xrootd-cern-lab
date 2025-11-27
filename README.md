@@ -20,10 +20,10 @@ What I’ve explored so far in this lab.
 - [x] Script basic dataset summary (sizes, file counts)
 
 ### Monitoring / “CERN job-related” extras
-- [] Time multiple `xrdcp` runs and log throughput
-- [] Parse CLI logs into a small CSV/JSON
-- [] Visualise transfer stats in a simple plot/Grafana panel
-- [] Note common error codes and failure modes
+- [x] Time multiple `xrdcp` runs and log throughput
+- [x] Parse CLI logs into a small CSV/JSON
+- [x] Visualise transfer stats in a simple plot/Grafana panel
+- [x] Note common error codes and failure modes
 
 ### Future ideas
 - [] Explore XCache / caching behaviour (if accessible)
@@ -90,3 +90,19 @@ File count: 165
 Total size: 220.457 GB
 Average file size: 1336.10 MB
 ```
+
+
+### xrdcp timing and throughput
+
+I ran `xrdcp` three times on the ~1.128 GB file and logged start/end times
+to `xrdcp_runs.log`. Parsed with `xrdcp_parse_logs.py`, the effective
+throughput was:
+
+- Run 1: ~0.57 MB/s  (~33 min)
+- Run 2: ~0.65 MB/s  (~29 min)
+- Run 3: ~20.5 MB/s  (~55 s)
+
+The large jump on the third run shows how much variability there can be in
+end-to-end data transfer (WAN path, caches, load, etc.). A real monitoring
+system would track these distributions over time and per site, not just
+single averages.
