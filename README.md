@@ -15,7 +15,7 @@ What I’ve explored so far in this lab.
 - [x] Copy a ROOT file locally with `xrdcp`
 
 ### Data access & analysis
-- [x] Open a ROOT file via `root://` in ROOT and Python
+- [x] Open a ROOT file via `root://` in ROOT
 - [] Compare local vs remote read performance
 - [] Script basic dataset summary (sizes, file counts)
 
@@ -58,4 +58,25 @@ xrdfs root://eospublic.cern.ch/ ls /eos
 xrdfs root://eospublic.cern.ch/ ls /eos/opendata
 ```
 
+### Comparing local vs remote read performance in ROOT
+
+Using the same TTree (`deepntuplizer/tree`), I timed opening the file and reading
+the first 100k entries with a simple `GetEntry(i)` loop and `TStopwatch`.
+
+`time_read.C` results (WSL, home network, cold cache):
+
+| Access mode         | Open time (s) | Read time real (s) | Read time CPU (s) | Entries read |
+|---------------------|--------------:|--------------------:|-------------------:|-------------:|
+| Local file (`file://`)  |     0.005    |        6.93         |        3.49        |     100k     |
+| Remote XRootD (`root://`)|     1.17     |      526.77         |        4.07        |     100k     |
+
+Observations:
+
+- Opening over XRootD takes ~1.2 s vs ~5 ms locally (network + handshake).
+- CPU time to process 100k entries is similar for local and remote (~3.5–4 s),
+  but the **real** time over XRootD is ~500 s because the process spends most of
+  the time waiting on remote I/O.
+- This illustrates how naive event-by-event reading over WAN is very slow
+  without caching/batching, and why XRootD caching (XCache) and optimised
+  read patterns are important in WLCG production.
 
