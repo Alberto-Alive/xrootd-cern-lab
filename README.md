@@ -16,7 +16,7 @@ What I’ve explored so far in this lab.
 
 ### Data access & analysis
 - [x] Open a ROOT file via `root://` in ROOT
-- [] Compare local vs remote read performance
+- [x] Compare local vs remote read performance
 - [] Script basic dataset summary (sizes, file counts)
 
 ### Monitoring / “CERN job-related” extras
