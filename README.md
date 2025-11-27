@@ -17,7 +17,7 @@ What I’ve explored so far in this lab.
 ### Data access & analysis
 - [x] Open a ROOT file via `root://` in ROOT
 - [x] Compare local vs remote read performance
-- [] Script basic dataset summary (sizes, file counts)
+- [x] Script basic dataset summary (sizes, file counts)
 
 ### Monitoring / “CERN job-related” extras
 - [] Time multiple `xrdcp` runs and log throughput
