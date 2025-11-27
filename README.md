@@ -25,9 +25,11 @@ What I’ve explored so far in this lab.
 - [x] Visualise transfer stats in a simple plot/Grafana panel
 - [x] Note common error codes and failure modes
 
-### Future ideas
-- [] Explore XCache / caching behaviour (if accessible)
-- [] Try authenticated access (X.509 or tokens) in a test setup
+### Future work
+With access to more infrastructure I’d like to:
+- Measure XCache / caching effects on repeated reads.
+- Try authenticated access (X.509 / tokens) to non-public XRootD endpoints.
+
 
 
 ## Environment
