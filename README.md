@@ -80,3 +80,13 @@ Observations:
   without caching/batching, and why XRootD caching (XCache) and optimised
   read patterns are important in WLCG production.
 
+
+
+### Dataset Summary
+
+```text
+=== Summary ===
+File count: 165
+Total size: 220.457 GB
+Average file size: 1336.10 MB
+```
